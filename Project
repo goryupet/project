@@ -43,13 +43,16 @@ opts = {
 
         "whatsapp": ('whatsapp', 'вацап', 'воцап', 'вотсап'),
 
+        "google": ('google', 'гугл', 'открой гугл', 'гугал', 'поиск в гугле', 'поисковик гугл')
+
         "telegram": ('telegram', 'телеграм', 'телеграмм', 'телега'),
 
         "schedule": ('расписание', 'уроки', 'пары'),
 
         "music": ('soundcloud', 'музыка', 'саундклауд', 'саунклауд', 'музыку'),
 
-        "weather": ('погода', 'за окном', 'градусов', 'влажность')
+        "weather": ('погода', 'за окном', 'градусов', 'влажность'),
+
     }
 
 }
@@ -271,9 +274,13 @@ def execute_command(command):
 
         webbrowser.open('https://www.reddit.com')
 
+    elif command == 'google':
+        webbrowser.open('https://www.google.com')
+
     elif command == 'whatsapp':
 
         os.system(r'C:\Users\seric\AppData\Local\WhatsApp\WhatsApp.exe')
+
     elif command == 'telegram':
         os.system(r'C:\Users\goryu\Downloads\tportable.1.8.13\Telegram\Telegram.exe')
 
